@@ -1,0 +1,2 @@
+# Palantir
+preparing interview
