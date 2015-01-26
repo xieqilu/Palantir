@@ -82,7 +82,7 @@ namespace MedianOfIntegerStream
 
 	}
 
-
+//MAX HEAP and MIN HEAP Solution!!
 	public class MinHeap<T> where T : IComparable 
 	{
 		private List<T> list = new List<T>();
@@ -155,6 +155,22 @@ namespace MedianOfIntegerStream
 		}
 	}
 
+
+//Follow-up: if the input is too large, how can you solve it using only constant memory? 
+//You can have random access to the ith value in the input array
+
+//Use an sort algorithm to sort the array; O(nlogn)
+//Then traverse the array to find each median; O(n)
+//Overall time complexity: O(nlogn)
+//Could use Insertion Sort:
+/**for i = 1 to length(A) - 1     
+	x = A[i]     
+	j = i     
+	while j > 0 and A[j-1] > x         
+		A[j] = A[j-1]         
+		j = j - 1     
+	A[j] = x
+	*/
 
 
 	class MainClass
